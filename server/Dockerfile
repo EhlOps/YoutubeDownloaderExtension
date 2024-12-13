@@ -8,6 +8,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN mkdir /downloads
+
 EXPOSE 8888
 
 ENTRYPOINT [ "python3" ]

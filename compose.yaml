@@ -4,3 +4,5 @@ services:
     stop_signal: SIGINT
     ports:
       - "8888:8888"
+    volumes:
+      - .:/downloads
