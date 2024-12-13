@@ -1,0 +1,6 @@
+services:
+  web:
+    build: ./server
+    stop_signal: SIGINT
+    ports:
+      - "8888:8888"
