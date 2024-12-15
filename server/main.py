@@ -9,6 +9,7 @@ def yt_dl():
     logger.info(data)
     url = data["url"]
     try:
+        url = url.replace("https", "http")
         download_video(url)
         return make_response(jsonify({"message": "Download complete"}), 200)
 
